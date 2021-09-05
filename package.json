@@ -16,6 +16,10 @@
   "bugs": {
     "url": "https://github.com/zorapeteri/bookmarks-to-json/issues"
   },
+  "keywords": [
+    "bookmarks", "bookmark", "json", "object", "chrome", "firefox", "browser", 
+    "export", "exported", "netscape", "html"
+  ],
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
