@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports.bookmarksToJSON = void 0;
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
@@ -141,6 +141,7 @@ var processFolder = function processFolder(folder, level) {
  * @param {string} markup - The content of the bookmarks file
  * @param {object} options - { stringify, formatJSON, spaces }
  * @returns The bookmarks in JSON format
+ * @see https://github.com/zorapeteri/bookmarks-to-json
  */
 
 
@@ -160,6 +161,4 @@ var bookmarksToJSON = function bookmarksToJSON(markup) {
   return JSON.stringify.apply(JSON, [obj].concat(_toConsumableArray(formatJSON ? [null, spaces] : [])));
 };
 
-var _default = bookmarksToJSON;
-exports["default"] = _default;
-module.exports = exports.default;
+exports.bookmarksToJSON = bookmarksToJSON;
