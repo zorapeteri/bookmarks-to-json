@@ -8,6 +8,14 @@
     "build": "babel src -d dist"
   },
   "author": "Zora Peteri (https://github.com/zorapeteri)",
+  "homepage": "https://github.com/zorapeteri/bookmarks-to-json#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zorapeteri/bookmarks-to-json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zorapeteri/bookmarks-to-json/issues"
+  },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
