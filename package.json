@@ -1,6 +1,6 @@
 {
   "name": "bookmarks-to-json",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert browser-exported HTML bookmarks to JSON format",
   "main": "index.js",
   "scripts": {
@@ -17,8 +17,17 @@
     "url": "https://github.com/zorapeteri/bookmarks-to-json/issues"
   },
   "keywords": [
-    "bookmarks", "bookmark", "json", "object", "chrome", "firefox", "browser", 
-    "export", "exported", "netscape", "html"
+    "bookmarks",
+    "bookmark",
+    "json",
+    "object",
+    "chrome",
+    "firefox",
+    "browser",
+    "export",
+    "exported",
+    "netscape",
+    "html"
   ],
   "license": "MIT",
   "dependencies": {},
