@@ -29,6 +29,9 @@
     "netscape",
     "html"
   ],
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
