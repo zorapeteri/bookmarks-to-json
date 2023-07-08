@@ -86,7 +86,7 @@ const processFolder = (folder, level) => {
  * @see https://github.com/zorapeteri/bookmarks-to-json
  */
 export const bookmarksToJSON = (markup, { stringify = true, formatJSON = false, spaces = 2 } = {}) => {
-  const obj = findChildren(markup)?.map(processChild);
+  const obj = findChildren(markup)?.map(child => processChild(child));
   if (!stringify) return obj;
   return JSON.stringify(obj, ...(formatJSON ? [null, spaces] : []));
 };
