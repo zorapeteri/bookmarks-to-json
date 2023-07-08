@@ -1,6 +1,6 @@
 {
   "name": "bookmarks-to-json",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Convert browser-exported HTML bookmarks to JSON format",
   "main": "index.js",
   "scripts": {
