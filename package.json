@@ -1,42 +1,31 @@
 {
-  "name": "bookmarks-to-json",
-  "version": "1.0.5",
-  "description": "Convert browser-exported HTML bookmarks to JSON format",
-  "main": "index.js",
+  "name": "bookmarks-to-json-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d dist"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
-  "author": "Zora Peteri (https://github.com/zorapeteri)",
-  "homepage": "https://github.com/zorapeteri/bookmarks-to-json#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zorapeteri/bookmarks-to-json.git"
+  "dependencies": {
+    "@codemirror/lang-json": "^6.0.1",
+    "@codemirror/state": "^6.2.1",
+    "@ddietr/codemirror-themes": "^1.4.1",
+    "bookmarks-to-json": "^1.0.5",
+    "cm6-theme-basic-dark": "^0.2.0",
+    "codemirror": "^6.0.1",
+    "preact": "^10.15.1",
+    "react-drag-drop-files": "^2.3.10",
+    "use-prefers-color-scheme": "^1.1.3"
   },
-  "bugs": {
-    "url": "https://github.com/zorapeteri/bookmarks-to-json/issues"
-  },
-  "keywords": [
-    "bookmarks",
-    "bookmark",
-    "json",
-    "object",
-    "chrome",
-    "firefox",
-    "browser",
-    "export",
-    "exported",
-    "netscape",
-    "html"
-  ],
-  "files": [
-    "dist"
-  ],
-  "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.15.4",
-    "@babel/core": "^7.15.5",
-    "@babel/preset-env": "^7.15.4"
-  }
+    "@iconify/react": "^4.1.1",
+    "@preact/preset-vite": "^2.5.0",
+    "gh-pages": "^5.0.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.0"
+  },
+  "homepage": "https://zorapeteri.github.io/bookmarks-to-json"
 }

@@ -1,0 +1,64 @@
+#app {
+  display: contents;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.wrapper.has-editor h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttons-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.cm-editor {
+  max-height: 70vh;
+  height: 70vh;
+  max-width: calc(100vw - 2rem);
+  text-align: start;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  min-width: 180px;
+  min-height: 40px;
+  margin: 0 auto;
+}
+
+.upload small {
+  display: none;
+  color: #888;
+  font-size: x-small;
+}
+
+@media (hover: hover) {
+  .upload small {
+    display: block;
+  }
+}
